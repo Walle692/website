@@ -1,6 +1,6 @@
 .navbar-container {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #176329; /* Money green */
+    background-color: #666600; 
 }
 
 .navbar {
@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #176329; /* Money green */
+    background-color: #666600; 
 }
 
 
@@ -16,6 +16,11 @@
 .nav-link {
     font-weight: bold;
     transition: color 0.3s ease;
+    color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .nav-link:hover {

@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink
+  NavItem
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is imported
-import './NavbarStyle.module.css';
+import styles from './NavbarStyle.module.css'; // Import CSS module
 
 export default class MyNavbar extends React.Component {
   constructor(props) {
@@ -30,21 +30,27 @@ export default class MyNavbar extends React.Component {
 
   render() {
     return (
-      <div className="navbar-container">
-        <Navbar light expand="lg" className="navbar">
+      <div className={styles['navbar-container']}>
+        <Navbar light expand="lg" className={styles.navbar}>
           <NavbarBrand href="/">HouseIndex</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ms-auto" navbar>
-              <NavItem>
-                <NavLink href="/">Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/services">Services</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/contact">Contact</NavLink>
-              </NavItem>
+            <NavItem>
+                <Link href="/page" passHref legacyBehavior>
+                <a className={styles['nav-link']}>Home</a>
+                </Link>
+            </NavItem>
+            <NavItem>
+                <Link href="/services" passHref legacyBehavior>
+                <a className={styles['nav-link']}>Services</a>
+                </Link>
+            </NavItem>
+            <NavItem>
+                <Link href="/contact" passHref legacyBehavior>
+                <a className={styles['nav-link']}>Contact</a>
+                </Link>
+            </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

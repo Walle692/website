@@ -1,6 +1,7 @@
+
 import React from 'react';
 
-const Services = () => {
+export default function Services() {
     return (
         <div style = {{display: "flex",
                        justifyContet: "center",
@@ -8,10 +9,8 @@ const Services = () => {
                        height: "100vh",
                     }}>
             <h1>
-                This is our services page, hope you find what you need.
+                This is our contact page, hope you find what you need.
             </h1>
         </div>
     )
 }
-
-export default Services;
