@@ -9,7 +9,7 @@ export default function Services() {
                        height: "100vh",
                     }}>
             <h1>
-                This is our contact page, hope you find what you need.
+                This is our services page, hope you find what you need.
             </h1>
         </div>
     )
