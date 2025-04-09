@@ -1,0 +1,18 @@
+.navbar-wrapper {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #176329; /* Money green */
+}
+
+
+.logo img {
+    max-height: 50px;
+}
+
+.nav-link {
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
