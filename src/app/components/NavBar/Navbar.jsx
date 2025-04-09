@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // Import PropTypes
 import {
   Collapse,
   Navbar,
@@ -10,7 +11,8 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem
+} from 'reactstrap';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -64,3 +66,14 @@ export default class Example extends React.Component {
     );
   }
 }
+
+// Define propTypes for the Navbar component
+Example.propTypes = {
+  light: PropTypes.bool,
+  dark: PropTypes.bool,
+  fixed: PropTypes.string,
+  color: PropTypes.string,
+  role: PropTypes.string,
+  expand: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
+};
