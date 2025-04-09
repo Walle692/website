@@ -13,8 +13,9 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
+import './Navbar.css';
 
-export default class Navbar extends React.Component {
+export default class myNavbar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -68,7 +69,7 @@ export default class Navbar extends React.Component {
 }
 
 // Define propTypes for the Navbar component
-Example.propTypes = {
+myNavbar.propTypes = {
   light: PropTypes.bool,
   dark: PropTypes.bool,
   fixed: PropTypes.string,
