@@ -38,17 +38,17 @@ export default class MyNavbar extends React.Component {
             <Nav className="ms-auto" navbar>
             <NavItem>
                 <Link href="/page" passHref legacyBehavior>
-                <a className={styles['nav-link']}>Home</a>
+                    <a className={styles['nav-link']}>Home</a>
                 </Link>
             </NavItem>
             <NavItem>
                 <Link href="/services" passHref legacyBehavior>
-                <a className={styles['nav-link']}>Services</a>
+                    <a className={styles['nav-link']}>Services</a>
                 </Link>
             </NavItem>
             <NavItem>
                 <Link href="/contact" passHref legacyBehavior>
-                <a className={styles['nav-link']}>Contact</a>
+                    <a className={styles['nav-link']}>Contact</a>
                 </Link>
             </NavItem>
             </Nav>
