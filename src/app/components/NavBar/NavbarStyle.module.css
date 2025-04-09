@@ -3,6 +3,13 @@
     background-color: #176329; /* Money green */
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #176329; /* Money green */
+}
 
 .logo img {
     max-height: 50px;
